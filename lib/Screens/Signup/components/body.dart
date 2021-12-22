@@ -22,7 +22,7 @@ class Body extends StatelessWidget {
               "SIGNUP",
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
-            SizedBox(height: size.height * 0.03),
+            // SizedBox(height: size.height * 0.03),
             SvgPicture.asset(
               "assets/icons/signup.svg",
               height: size.height * 0.35,
@@ -32,13 +32,18 @@ class Body extends StatelessWidget {
               onChanged: (value) {},
             ),
             RoundedPasswordField(
+              hintText: "Password",
+              onChanged: (value) {},
+            ),
+            RoundedPasswordField(
+              hintText: "Confirm Password",
               onChanged: (value) {},
             ),
             RoundedButton(
               text: "SIGNUP",
               press: () {},
             ),
-            SizedBox(height: size.height * 0.03),
+            //SizedBox(height: size.height * 0.03),
             AlreadyHaveAnAccountCheck(
               login: false,
               press: () {
